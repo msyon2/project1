@@ -1,0 +1,201 @@
+@charset "UTF-8";
+
+/* overall or common */
+body {
+	font-size: 16px;
+	font-family: 'NotoKrL','맑은 고딕', sans-serif;
+	color: #777;
+	letter-spacing: .5px;
+}
+.cf::after {
+	content: '';
+	display: block;
+	clear: both;
+}
+.fl {
+	float: left;
+}
+.left {
+	text-align: left;
+}
+pr {
+	position: relative;
+}
+pa {
+	position: absolute;
+}
+#notice_board {
+	max-width: 1180px;
+	width: 100%;
+	left: 50%;
+	transform: translateX(-50%);
+}
+h1 {
+	font-size: 40px;
+	font-family: 'NotoKrM';
+	color: #000000;
+	text-align: center;
+	margin-top: 100px;
+	margin-bottom: 60px;
+}
+/* 게시판 검색창 */
+#search_box fieldset{
+    display: block;
+	border: none;
+	height: 60px;
+	position: relative;
+	left: 50%;
+	margin-left: -283px;
+	margin-bottom: 100px;
+}
+#search_box input { 
+	width: 447px;
+	height: 60px;
+	border: 2px solid #eee;
+	border-radius: 10px 0 0 0;
+	padding: 0 20px;
+	font-family: 'NotoKrL';
+	font-size: 16px;
+}
+#search_box fieldset button {
+	width: 120px;
+	height: 60px;
+	border: none;
+	border-radius: 0 10px 0 0;
+	background: #0770bb url();
+	color: white;
+	font-family: 'NotoKrL';
+	font-size: 16px;
+	cursor: pointer;
+}
+#search_box p {
+	margin-bottom: 15px;
+	font-size: 14px;
+}
+#search_box p span {
+	color: #0770bb;
+}
+/* 게시판 */
+#notice_board div>div.first {
+	border-top: 2px solid #bbb;
+	background: #eee;
+	color: #000000;
+}
+#notice_board div>div.first div {
+	font-size: 16px;
+	font-family: 'NotoKrR';
+	padding: 0 20px;
+	text-align: center;
+	height: 70px;
+	line-height: 70px;
+	width: 10%;
+}
+#board_wrap div.cf {
+	border-bottom: 1px solid #bbb;
+}
+#board_wrap div.first div.title {
+	width: 70%;
+}
+/* board category */
+#board_wrap input[type="radio"] {
+	display: none;
+}
+#board_wrap > div:hover{
+	background: rgba(7, 112, 187, .3);
+}
+/* board subject */
+#board_wrap > div > div.fl {
+	width: 10%;
+	height: 70px;
+	line-height: 70px;
+	text-align: center;
+}
+#board_wrap div div.left{
+	width: 70%;
+	height: 70px;
+	text-align: left;
+	white-space: nowrap; /* content가 길어져도 줄바꿈 안함 */
+	text-overflow: ellipsis;
+	overflow: hidden;
+}
+#board_wrap div>label {
+	cursor: pointer;
+}
+/* board content */
+#board_wrap .content_wrap {
+	width: 86%;
+	height: 0;
+	text-align: left;
+	overflow: hidden;
+	margin: auto;
+	transition: all .8s;
+}
+#board_wrap .content_wrap .sub_title {
+	background: #0770bb;
+	border-radius: 10px 10px 0 0;
+	text-align: justify;
+	font-size: 16px;
+	font-weight: 700;
+	color: white;
+	padding: 20px;
+}
+#board_wrap .content_wrap .content {
+	background: white;
+	border: .5px solid #0770bb;
+	border-radius: 0 0 10px 10px;
+	text-align: justify;
+	padding: 30px 20px;
+	font-size: 16px;
+	line-height: 1.3em;
+}
+#board_wrap .content_wrap span.underline {
+	text-decoration: underline;
+} 
+/* radio btn checked */
+#board_wrap input:checked ~ div.content_wrap {
+	height: auto;
+	padding: 2% 0;
+	/* height auto를 줄때 padding 상하를 주어  */
+}
+/* pagination */
+#pager_wrap {
+	width: inherit;
+	margin-bottom: 50px;
+}
+#pager_wrap .container {
+	width: 500px;
+	margin: auto;
+	margin-top: 50px;
+}
+#pager_wrap div {
+	text-align: center;
+	font-size: 11px;
+}
+#pager_wrap .pageNo {
+	width: 36px;
+	height: 36px;
+	line-height: 36px;
+	border: 1px solid #bbb;
+	border-radius: 50%;
+	margin-right: 5px;
+}
+#pager_wrap .pageNo:hover {
+	border: 1px solid #199da3;
+}
+#pager_wrap div.active {
+	background-color: #199da3;
+	border: 1px solid transparent;
+	color: white;
+	font-weight: 800;
+}
+#pager_wrap .next {
+	background: url(../images/icon_components.png);
+	background-position: -30px 11px;
+	text-indent: -2222222222222222px;
+}
+#pager_wrap .last {
+	background: url(../images/icon_components.png);
+	background-position: -51px 11px;
+	text-indent: -2222222222222222px;
+}
+

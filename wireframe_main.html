@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>인하대병원 main page wireframe</title>
+	<!-- favicon -->
+	<link rel="shortcut icon" href="favicon/favicon.ico" type="image/x-icon">
+	<link rel="apple-touch-icon" sizes="57x57" href="favicon/apple-icon-57x57.png">
+	<link rel="apple-touch-icon" sizes="60x60" href="favicon/apple-icon-60x60.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="favicon/apple-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="76x76" href="favicon/apple-icon-76x76.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="favicon/apple-icon-114x114.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="favicon/apple-icon-120x120.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="favicon/apple-icon-144x144.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="favicon/apple-icon-152x152.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-icon-180x180.png">
+	<link rel="icon" type="image/png" sizes="192x192"  href="favicon/android-icon-192x192.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="96x96" href="favicon/favicon-96x96.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+	<link rel="manifest" href="favicon/manifest.json">
+	<meta name="msapplication-TileColor" content="#ffffff">
+	<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+	<meta name="theme-color" content="#ffffff">
+	<style>
+		/* reset */
+		* {
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+		}
+		/* overall */
+		body {
+			width: 100vw;
+		}
+		header, main, footer {
+			width: 100vw;
+			background: #797878;
+		}
+		.container {
+			width: 1180px;
+			background: #bcbcbc;
+			margin: auto;
+		}
+		.cf::after {
+			content: '';
+			display: block;
+			clear: both;
+		}
+		.fl {float: left;}
+		.fr {float: right;}
+		/* header wireframe */
+		#hTop {
+			border-bottom: .5px solid #bcbcbc
+		}
+		#hTop #hTopR {
+			width: 380px;
+			height: 50px;
+			background: #e2e2e2;
+		}
+		#hTop .logo {
+			width: 150px;
+			height: 50px;
+			background: #e2e2e2;
+			margin-left: 40px;
+		}
+		#hTop #hTopL {
+			width: 260px;
+			height: 50px;
+			background: #e2e2e2;
+		}
+		#navbar .menu {
+			width: 750px;
+			height: 60px;
+			background: #e2e2e2;
+		}
+		#navbar .quickbtn {
+			width: 240px;
+			height: 60px;
+			background: #e2e2e2;
+		}
+		#hKeyvisual {
+			padding: 300px 0 50px;
+		}
+		#hKeyvisual .title {
+			width: 415px;
+			height: 60px;
+			background: #e2e2e2;
+			margin: auto;
+			margin-bottom: 10px;
+		}
+		#hKeyvisual .content {
+			width: 415px;
+			height: 72px;
+			background: #e2e2e2;
+			margin: auto;
+		}
+		#hService .serviceBox {
+			padding: 115px 0 200px;
+		}
+		#hService .service {
+			width: 380px;
+			height: 105px;
+			
+			border-radius: 10px 0 0 0;
+			background: #e2e2e2;
+		}
+		#hService .service:nth-last-of-type(2) {
+			margin: 0 20px;
+		}
+		/* main content overall*/
+		h2 {
+			width: 260px;
+			height: 90px;
+			background: #e2e2e2;
+			margin-bottom:5px ;
+		}
+		p {
+			width: 375px;
+			height: 20px;
+			background: #e2e2e2;
+		}
+		/* main content: Healthy wireframe */
+		#healthySearch {
+			padding: 70px 0 125px;
+		}
+		.search {
+			width: 280px;
+			height: 448px;
+			margin-right: 20px;
+			background: #e2e2e2;
+		}
+		.search:nth-of-type(4) {
+			margin-right: 0;
+		}
+		/* main content: Now wireframe */
+		#nowInfo {
+			padding: 70px 0 125px;
+		}
+		#nowInfo .infoBox {
+			margin-bottom: 20px;
+		} 
+		#nowInfo .info1 {
+			width: 780px;
+			height: 250px;
+			border-radius: 10px 0 0 0;
+			background: #e2e2e2;
+		}
+		#nowInfo .info2 {
+			width: 380px;
+			height: 250px;
+			background: #e2e2e2;
+		}
+		#nowInfo .info {
+			width: 380px;
+			height: 245px;
+			background: #e2e2e2;
+			margin-left: 20px;
+		}
+		#nowInfo .info:first-of-type {
+			margin-left: 0;
+		}
+		/* footer */
+		#qlinklist .quicklink {
+			width: 14.28%;
+			height: 50px;
+			background: #e2e2e2;
+			border: .5px solid #bcbcbc;
+		}
+		#certlist .cert {
+			width: 25%;
+			height: 80px;
+			background: #e2e2e2;
+			border: .5px solid #bcbcbc;
+		}
+		#supportlink2 {
+			padding-bottom: 20px;
+		}
+		#supportlink1 .inner1 {
+			width: 320px;
+			margin: auto;
+			padding: 20px 0 10px;
+		}
+		#supportlink1 .link1 {
+			width: 25%;
+			height: 23px;
+			background: #e2e2e2;
+			border: .5px solid #bcbcbc;
+		}
+		#supportlink2 .inner2 {
+			width: 695px;
+			margin: auto;
+			padding: 10px;
+		}
+		#supportlink2 .link2 {
+			width: 16.6666%;
+			height: 23px;
+			background: #e2e2e2;
+			border: .5px solid #bcbcbc;
+		}
+		/* footer-Info */
+		#fInfo .inner {
+			padding: 30px 0 42px;
+		}
+		.contactInfo1 {
+			width: 718px;
+			height: 22px;
+			background: #e2e2e2;
+			margin-bottom: 10px;
+		}
+		.contactInfo2 {
+			width: 718px;
+			height: 75px;
+			background: #e2e2e2;
+		}
+		.relativeBtn1, .relativeBtn2 {
+			width: 167px;
+			height: 36px;
+			background: #e2e2e2;
+			margin: 0 0 35px 10px;
+		}
+		p {
+			width: 370px;
+			height: 38px;
+			background: #e2e2e2;
+		}
+
+	</style>
+</head>
+<body>
+	<header>
+		<div id="hTop" class="container cf">
+			<div id="hTopR" class="fl"></div>
+			<h1 class="logo fl"></h1>
+			<div id="hTopL" class="fr"></div>
+		</div>
+		<div id="navbar" class=" container cf">
+			<div class="menu fl"></div>
+			<div class="quickbtn fr"></div>
+		</div>
+		<div id="hKeyvisual" class="container">
+			<h2 class="title"></h2>
+			<p class="content"></p>
+		</div>
+		<div id="hService" class="container cf">
+			<div class="serviceBox">
+				<div class="service fl"></div>
+				<div class="service fl"></div>
+				<div class="service fl"></div>
+			</div>
+		</div>
+	</header>
+	<main>
+		<div id="mContent">
+			<div id="healthy" class="container">
+				<h2 class="title"></h2>
+				<p class="caption"></p>
+			</div>
+			<div id="healthySearch" class="container cf">
+				<div class="search fl"></div>
+				<div class="search fl"></div>
+				<div class="search fl"></div>
+				<div class="search fl"></div>
+			</div>
+			<div id="now" class="container">
+				<h2 class="title"></h2>
+				<p class="caption"></p>
+			</div>
+			<div id="nowInfo" class="container">
+				<div class="infoBox cf">
+					<div class="info1 fl"></div>
+					<div class="info2 fr"></div>
+				</div>
+				<div class="infoBox2 cf">
+					<div class="info fl"></div>
+					<div class="info fl"></div>
+					<div class="info fl"></div>
+				</div>
+			</div>
+		</div>
+	</main>
+	<footer>
+		<div id="quicklink">
+			<div id="qlinklist" class="container cf">
+				<div class="quicklink fl"></div>
+				<div class="quicklink fl"></div>
+				<div class="quicklink fl"></div>
+				<div class="quicklink fl"></div>
+				<div class="quicklink fl"></div>
+				<div class="quicklink fl"></div>
+				<div class="quicklink fl"></div>
+			</div>
+		</div>
+		<div id="fBanner">
+			<div id="certlist" class="container cf">
+				<div class="cert fl"></div>
+				<div class="cert fl"></div>
+				<div class="cert fl"></div>
+				<div class="cert fl"></div>
+			</div>
+		</div>
+		<div id="fSupportlink">
+			<div id="supportlink1" class="container cf">
+				<div class="inner1">
+					<div class="link1 fl"></div>
+					<div class="link1 fl"></div>
+					<div class="link1 fl"></div>
+					<div class="link1 fl"></div>
+				</div>
+			</div>
+			<div id="supportlink2" class="container cf">
+				<div class="inner2">
+					<div class="link2 fl"></div>
+					<div class="link2 fl"></div>
+					<div class="link2 fl"></div>
+					<div class="link2 fl"></div>
+					<div class="link2 fl"></div>
+					<div class="link2 fl"></div>
+				</div>
+			</div>
+		</div>
+		<div id="fInfo" class="container">
+			<div class="inner cf">
+					<div class="contactInfo1 fl"></div>
+					<div class="relativeBtn1 fr"></div>
+					<div class="relativeBtn2 fr"></div>
+					<div class="contactInfo2 fl"></div>
+					<p class="fr"></p>
+			</div>
+		</div>
+	</footer>
+
+</body>
+</html>
