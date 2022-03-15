@@ -17,7 +17,7 @@
 	line-height: 30px;
 	width: 300px;
 	text-align: center;
-	z-index: 999;
+	z-index: 99;
 }
 #skip a:active, 
 #skip a:focus {
@@ -34,22 +34,18 @@ header {
 	font-weight: 300;
 	font-size: 14px;
 	width: 100%;
-	/* position: relative; */
 }
 #gnb {
 	width: 100%;
-	/* position: relative; */
 	height: 131px;
 	background: #fff;
-	z-index: 9999;
+	z-index: 9;
 }
 #gnb_top {
 	width: 100%;
 	margin: auto;
 	height: 60px;
 	border-bottom: 1px solid #d2d4d7;
-	/* position: absolute;
-	z-index: 9999; */
 }
 .m_width {
 	width: 100%;
@@ -153,12 +149,12 @@ h1.logo {
 	height: 0;
 	display: block;
 	overflow: hidden;
-	/* doesn't function-check later */
+	/* JS later */
 }
 #gnb_top .top_right .lang a:hover #gnb_top .top_right .lang ul {
 	display: block;
 	height: auto;
-	/* doesn't function - check later */
+	/* JS later */
 }
 
 /* header-gnb nav */
@@ -234,7 +230,6 @@ button.open_menu {
 #gnb_nav:hover .quickbtn {
 	background: linear-gradient(135deg, #0770bb 0%,#0770bb 31%,#199da3 100%);
 	height: 487px;
-	/* position: relative; */
 	z-index: 99;
 }
 #gnb_nav .quickbtn>div.cf label {
@@ -498,7 +493,7 @@ button.open_menu {
 /* gnb - quick form */
 .btnbanner {
 	width: 268px;
-	z-index: 999;
+	z-index: 99;
 	display: none;
 }
 #gnb_nav:hover .btnbanner {
@@ -511,7 +506,7 @@ button.open_menu {
 	margin-top: 16px;
 	text-align: center;
 	top: 6px;
-	z-index: 9999;
+	z-index: 99;
 }
 #gnb_quickform::before{
 	content: '';
@@ -522,7 +517,7 @@ button.open_menu {
 	background: #fff url(../images/icon_header.png) no-repeat 0 -300px ;
 	position: relative;
 	left: 34%;
-	z-index: 9999;
+	z-index: 99;
 }
 #gnb_quickform p {
 	color: #fff;
@@ -571,7 +566,6 @@ button.open_menu {
 	background: none;
 	padding: 20px 15px;
 }
-
 
 
 /* breadcrumb */
@@ -656,8 +650,6 @@ button.open_menu {
 	width: 100%;
 	display: block;
 }
-
-
 
 
 /* footer */

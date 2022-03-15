@@ -643,14 +643,19 @@ button.open_menu {
 .quick_link li:nth-child(7) a::after {
 	background-position: 0 -0px;
 }
-.top_btn {
+#footer #back_to_top {
 	width: 60px;
 	height: 60px;
 	background: url(../images/icon_top.png)0 0 no-repeat;
 	cursor: pointer;
-	position: absolute;
-	top: -90px;
-	right: 0;
+	position: fixed;
+	bottom: 50px;
+	right: 50px;
+	transition: all .3s ease-in-out;
+	opacity: 0;
+}
+#footer #back_to_top.visible {
+	opacity: 1;
 }
 
 /* footer banner */

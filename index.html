@@ -246,31 +246,6 @@
 							</div>
 						</div>
 					</div>
-					<!-- 					<div class="banner_btm">
-						<div class="m_width cf">
-							<div class="banner_info1 fl">
-								최상의 진료, 연구, 교육을 통해
-								<br>
-								고객신뢰 . 첨단의술 . 내부화합을 실천합니다.
-							</div>
-							<div class="banner_info2 fl">
-								<ul class="info2">
-									<li class="trust fl">Trust</li>
-									<li class="tech fl">Technology</li>
-									<li class="team fl">Teamwork</li>
-
-								</ul>
-							</div>
-							<div class="banner_info3 fl">
-								<ul class="info3">
-									<li><span>대표전화</span>032-890-2114</li>
-									<li><span>진료예약</span>032-890-2000</li>
-									<li><span>암환자빠른예약</span>032-890-3600</li>
-								</ul>
-							</div>
-						</div>
-					</div>
- -->
 				</div>
 				<!-- //.m_width  -->
 			</div>
@@ -332,37 +307,37 @@
 					<input id=slide6 name="pager" type="radio">
 
 					<ul class="slider_list">
-						<li class="slide1" id="bg1">
+						<li id="gallery" class="slide1" id="bg1">
 							<h2>환자가 안전한 병원</h2>
 							<p>권역응급의료센터ㆍ희귀질환 경기서북부권 거점센터<br>
 								암통합지원센터ㆍ인천권역 심뇌혈관질환센터
 							</p>
 						</li>
-						<li class="slide2" id="bg2">
+						<li id="gallery" class="slide2" id="bg2">
 							<h2>안전을 위한 첨단의료</h2>
 							<p>인하대병원은<br>
 								첨단장비를 통해 정확한 진단을 합니다.
 							</p>
 						</li>
-						<li class="slide3" id="bg3">
+						<li id="gallery" class="slide3" id="bg3">
 							<h2>미래를 위한 혁신의료</h2>
 							<p>인하대병원<br>
 								의생명연구원은 혁신의료를 선도합니다.
 							</p>
 						</li>
-						<li class="slide4">
+						<li id="gallery" class="slide4">
 							<h2>환자를 위한 전문의료</h2>
 							<p>인하대병원은<br>
 								전문적인 의료진으로 구성되었습니다.
 							</p>
 						</li>
-						<li class="slide5">
+						<li id="gallery" class="slide5">
 							<h2>로봇수술센터</h2>
 							<p>인하대병원은<br>
 								안전하고, 정교하며, 정확한 수술을 합니다.
 							</p>
 						</li>
-						<li class="slide6">
+						<li id="gallery" class="slide6">
 							<h2>인천권역 심뇌혈관질환센터</h2>
 							<p>24시간 365일<br>
 								당신의 심장과 뇌를 지킵니다.
@@ -372,8 +347,8 @@
 				</div>
 				<div class="slider_control">
 					<div class="m_width">
-						<a class="prev" href="#">이전</a>
-						<a class="next" href="#">다음</a>
+						<a class="prev" href="#prev" onclick="prevGallery()">이전</a>
+						<a class="next" href="#next" onclick="nextGallery()">다음</a>
 					</div>
 				</div>
 				<div class="pager">
@@ -629,7 +604,7 @@
 	<footer id="footer">
 		<div class="q_link_wrap">
 			<div class="quick_link">
-				<a class="top_btn" href="#key_visual"></a>
+				<a id="back_to_top" class="top_btn" href="#key_visual"></a>
 				<ul class="m_width">
 					<li><a href="./sub_pages/notice.html">오시는길</a></li>
 					<li><a href="./sub_pages/notice.html">주차안내</a></li>
@@ -704,6 +679,26 @@
 		</div>
 	</footer>
 	<!-- //#footer -->
+	<script>
+		let num=1;
+		/* 좌우버튼 클릭시 사진병경 */
+		//function for right btn click -> next photo loads
+		function nextGallery(){
+			num++;
+			if(num>6){num=1}
+			document.getElementById('gallery').class="slide" + num
+			//console.log(document.getElementById('gallery').src);
+		}
+		//function for right btn click -> previous photo loads
+		function prevGallery(){
+			num--;
+			if(num<1){num=6}
+			document.getElementById('gallery').class="slide" + num
+		}
+	</script>
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	<script src="js_jq/jq.js"></script>
+
 </body>
 
 </html>
