@@ -24,12 +24,12 @@
 	<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
 	<meta name="theme-color" content="#ffffff">
 	<title>인하대병원</title>
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
-		integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
-		crossorigin="anonymous" referrerpolicy="no-referrer" />
 	<link rel="stylesheet" href="css/reset.css">
-	<link rel="stylesheet" href="css/style.css">
-	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<link rel="stylesheet" href="css/style_js.css">
+	<link rel="stylesheet" href="css/main_js.css">
+	<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css" />
 </head>
 
 <body>
@@ -56,8 +56,7 @@
 						<li class="fl"><a href="./sub_pages/notice.html">진료협력센터</a></li>
 						<li class="fl"><a href="./sub_pages/notice.html">암통합지원센터</a></li>
 					</ul>
-					<h1 class="logo fl"><a href="index.html"><img src="images/logo_main.png" alt="인하대병원 로고"
-								width="182"></a></h1>
+					<h1 class="logo fl"><a href="index.html"><img src="images/logo_main.png" alt="인하대병원 로고" width="182"></a></h1>
 					<ul class="top_right fr">
 						<li class="fl"><a href="./sub_pages/notice.html">로그인</a></li>
 						<li class="fl"><a href="./sub_pages/notice.html">회원가입</a></li>
@@ -299,13 +298,6 @@
 			<!-- kv_bg -->
 			<div class="kv_bg">
 				<div class="slider">
-					<input id=slide1 name="pager" type="radio" checked>
-					<input id=slide2 name="pager" type="radio">
-					<input id=slide3 name="pager" type="radio">
-					<input id=slide4 name="pager" type="radio">
-					<input id=slide5 name="pager" type="radio">
-					<input id=slide6 name="pager" type="radio">
-
 					<ul class="slider_list">
 						<li id="gallery" class="slide1" id="bg1">
 							<h2>환자가 안전한 병원</h2>
@@ -347,17 +339,17 @@
 				</div>
 				<div class="slider_control">
 					<div class="m_width">
-						<a class="prev" href="#prev" onclick="prevGallery()">이전</a>
-						<a class="next" href="#next" onclick="nextGallery()">다음</a>
+						<a class="prev">이전</a>
+						<a class="next">다음</a>
 					</div>
 				</div>
 				<div class="pager">
-					<label for="slide1" class="dot1"></label>
-					<label for="slide2" class="dot2"></label>
-					<label for="slide3" class="dot3"></label>
-					<label for="slide4" class="dot4"></label>
-					<label for="slide5" class="dot5"></label>
-					<label for="slide6" class="dot6"></label>
+					<li class="dot1 on"><a href="#" class="hidden">배너1</a></li>
+					<li class="dot2"><a href="#" class="hidden">배너2</a></li>
+					<li class="dot3"><a href="#" class="hidden">배너3</a></li>
+					<li class="dot4"><a href="#" class="hidden">배너4</a></li>
+					<li class="dot5"><a href="#" class="hidden">배너5</a></li>
+					<li class="dot6"><a href="#" class="hidden">배너6</a></li>
 				</div>
 			</div>
 			<!-- //.kv_bg -->
@@ -502,43 +494,32 @@
 				</div>
 				<div class="showcase">
 					<div class="slider1 fl">
-						<u class="slider_list1">
-							<li class="new1">
+						<div class="slider_list1">
+							<div class="new1">
 								<p>환자 중심의 전인적인 의료서비스</p>
 								<h3 class="newtit">암통합지원센터</h3>
 								<a class="more" href="./sub_pages/notice.html">자세히보기</a>
-							</li>
-							<li class="new2">
+							</div>
+							<div class="new2">
 								<p>안전하고, 정교하고 정확한 수술</p>
 								<h3 class="newtit">로봇수술센터</h3>
 								<a class="more" href="./sub_pages/notice.html">자세히보기</a>
-							</li>
-							<li class="new3">
+							</div>
+							<div class="new3">
 								<p>정밀 유전자 검사를 통한 진단과 치료</p>
 								<h3 class="newtit">희귀질환 경기서북부권 거점센터</h3>
 								<a class="more" href="./sub_pages/notice.html">자세히보기</a>
-							</li>
-						</u>
-						<div class="control">
-							<a href="./sub_pages/notice.html" class="prev"><i class="fa-solid fa-angle-left"></i></a>
-							<a href="./sub_pages/notice.html" class="next"><i class="fa-solid fa-angle-right"></i></a>
+							</div>
 						</div>
-						<div class="pager">
-							<div class="dot"></div>
-							<div class="dot active"></div>
-							<div class="dot"></div>
-						</div>
+						<!-- 구조는 상관없습니다. 좌우컨트롤버튼을 넣을 html 요소를 만들어주시고 css로 디자인해주세요 -->
+						<div class="prev"><i class="fa-solid fa-chevron-left"></i></div>
+						<div class="next"><i class="fa-solid fa-chevron-right"></i></div>
 					</div>
 					<div class="slider2 fl">
-						<ul class="slider_list2">
-							<li class="now1"></li>
-							<li class="now2"></li>
-							<li class="now3"></li>
-						</ul>
-						<div class="pager">
-							<div class="dot active"></div>
-							<div class="dot"></div>
-							<div class="dot"></div>
+						<div class="slider_list2">
+							<div class="now1"></div>
+							<div class="now2"></div>
+							<div class="now3"></div>
 						</div>
 					</div>
 				</div>
@@ -651,14 +632,14 @@
 				</ul>
 				<div class="legal_list">
 					<div class="link_btn">
-						<div class="legal_info">약관정보
+						<div class="legal_info btn">약관정보
 							<ul>
 								<li><a href="./sub_pages/notice.html">환자의권리와의무</a></li>
 								<li><a href="./sub_pages/notice.html">이메일무단수집거부</a></li>
 								<li><a href="./sub_pages/notice.html">이용약관</a></li>
 							</ul>
 						</div>
-						<div class="relation_info">관련사이트
+						<div class="relation_info btn">관련사이트
 							<ul>
 								<li><a href="./sub_pages/notice.html">(주)대한항공</a></li>
 								<li><a href="./sub_pages/notice.html">(주)한진</a></li>
@@ -679,16 +660,17 @@
 		</div>
 	</footer>
 	<!-- //#footer -->
-
+	
+	<!-- script -->
 	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-	<!-- <script src="js/jq.js"></script> -->
+	<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+	<script src="js/jq.js"></script>
 	<script src="js/detectmobilebrowser.js"></script>
 	<script>
 		if(jQuery.browser.mobile==true){
 			location.href="mobile/"
 		}
 	</script>
-
 </body>
 
 </html>

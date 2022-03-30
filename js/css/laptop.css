@@ -1,0 +1,40 @@
+/* overall */
+#header .w1280, 
+main .w1280, 
+footer .w1280 {
+	width: 90%;	
+	margin: auto;
+}
+.w1280 {
+	max-width: 960px;
+	width: 85vw;
+	margin: 0 auto;
+}
+
+
+
+/* header */
+#header .logo,
+#header .member {
+	width: 30%;
+}
+#header .nav {
+	width: 40%;
+}
+#header .nav label {
+	padding: 10px 12px;
+	font-size: 14px;
+}
+#header .nav .search_box {
+	max-width: 960px;
+	width: 90vw;
+	margin: auto;
+}
+
+
+
+/* main - Trip Destination & Activity */
+#activity .activity_card .card {
+	width: 49%;
+	margin-bottom: 4%;
+}

@@ -1,0 +1,123 @@
+/* overall */
+#header .w1280, 
+main .w1280, 
+footer .w1280 {
+	width: 90%;	
+	margin: auto;
+}
+.w1280 {
+	max-width: 960px;
+	width: 85vw;
+	margin: 0 auto;
+}
+
+
+
+/* header */
+#header .logo,
+#header .member {
+	width: 40%;
+}
+#header .nav {
+	width: 70%;
+	height: 70px;
+	top: 80px;
+	left: 50%;
+	transform: translateX(-50%);
+	position: absolute;
+}
+#header .nav label {
+	padding: 10px 12px;
+}
+#header .nav .search_box {
+	max-width: 960px;
+	width: 90vw;
+	margin: auto;
+}
+
+
+
+/* main */
+#main_vis {
+	padding-bottom: 48px;
+}
+.visual h2 {
+	font-size: 32px;
+	line-height: 36px;
+	letter-spacing: -0.02em;text-align: center;
+}
+.visual .flexible a {
+	font-size: 15px;
+	padding: 14px 20px;
+}
+
+.visual .flexible a {
+	font-size: 15px;
+	padding: 14px 20px;
+}
+
+/* main - Trip Destination & Activity */
+#trip_dest .card .img,
+#trip_dest .card .info {
+	height: 150px;
+}
+
+/* main - host */
+#hosting .w1280 {
+	padding: 32px 40px;
+	height: 400px;
+}
+#hosting h2 {
+	font-size: 43px;
+	line-height: 45px;
+}
+
+/* future dest */
+/* need to figure out tab condition */
+#future_dest .future_dest_list {
+	overflow: hidden;
+}
+#future_dest .future_dest_panel li {
+	width: 33.33%;
+}
+
+
+
+/* footer */
+#footer #info_list {
+	flex-wrap: wrap;
+	padding-bottom: 0;
+}
+#footer #info_list>div {
+	width: 100%;
+	padding-bottom: 24px;
+	margin-bottom: 24px;
+	border-bottom: 1px solid var(--gray3);
+}
+#footer #info_list>div:last-child {
+	
+	margin-bottom: 0;
+}
+#footer #info_list>div ul {
+	display: flex;
+	flex-wrap: wrap;
+}
+#footer #info_list>div li {
+	width: 33.33%;
+}
+#copyright {
+	border-top: none;
+}
+#copyright .w1280 {
+	flex-direction: column-reverse;
+	align-items: flex-start;
+	align-items: center;
+}
+#copyright .foot_left {
+	display: block;
+	margin-top: 10px;
+	text-align: center;
+}
+#copyright .foot_left>span:first-of-type {
+	display: none;
+}

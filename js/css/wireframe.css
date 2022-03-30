@@ -1,0 +1,224 @@
+@charset "UTF-8";
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+/* basics */
+body {
+	width: 100vw;
+}
+#header, main, #footer {
+	width: 100vw;
+	height: auto;
+	background: #797878;
+}
+.w1280 {
+	width: 100%;
+	max-width: 1280px;
+	margin: auto;
+	background: #bcbcbc;
+}
+.flex {
+	display: flex;
+}
+.pr {
+	position: relative;
+}
+.pa {
+	position: absolute;
+}
+
+/* header */
+.top {
+	width: 100%;
+	height: 160px;
+	justify-content: space-between;
+
+}
+.logo, .nav, .member {
+	width: 30%;
+	height: 80px;
+	background: #e2e2e2;
+}
+.search {
+	width: 850px;
+	height: 80px;
+	background: #e2e2e2;
+	border: 1px solid #bcbcbc;
+	top: 80px;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+/* main - main visual */
+main {
+	width: 100vw;
+	height: auto;
+}
+#main_vis .w1280 {
+	height: 740px;
+	padding-top: 100px;
+}
+.visual {
+	width: 100%;
+	height: 640px;
+	background: #e2e2e2;
+	
+}
+.visual h2 {
+	width: 700px;
+	height: 50px;
+	background: #eeeeee;
+	bottom: 155px;
+	left: 50%;
+	transform: translateX(-50%);
+}
+.visual button {
+	width: 162px;
+	height: 56px;
+	border-radius: 28px;
+	background: #eeeeee;
+	border: none;
+	bottom: 75px;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+/* main-trip destination */
+#trip_dest {
+	width: 100%;
+}
+#trip_dest .w1280 {
+	height: 700px;
+	padding-top: 100px;
+}
+#trip_dest h2 {
+	width: 524px;
+	height: 40px;
+	background: #e2e2e2;
+	margin-bottom: 50px;
+}
+#trip_dest .dest_card {
+	justify-content: space-between;
+}
+#trip_dest .card {
+	width: 24%;
+	height: 402px;
+	background: #e2e2e2;
+	border-radius: 12px;
+}
+
+/* main - activity */
+#activity .w1280 {
+	height: 700px;
+	padding-top: 100px;
+}
+#activity h2 {
+	width: 524px;
+	height: 40px;
+	background: #e2e2e2;
+	margin-bottom: 50px;
+}
+#activity .activity_card {
+	justify-content: space-between;
+}
+#activity .card {
+	width: 49.3%;
+	height: 402px;
+	background: #e2e2e2;
+	border-radius: 14px;
+}
+
+/* main - giftcard */
+#giftcard .w1280 {
+	height: 700px;
+	padding-top: 80px;
+	justify-content: space-between;
+}
+#giftcard h2 {
+	width: 315px;
+	height: 126px;
+	background: #e2e2e2;
+	margin-bottom: 22px;
+}
+#giftcard button {
+	width: 135px;
+	height: 49px;
+	background: #e2e2e2;
+	border-radius: 14px;
+	border: none;
+}
+#giftcard .bg {
+	width: 861px;
+	height: 340px;
+	background: #e2e2e2;
+}
+
+/* main - hosting */
+#hosting .host {
+	width: 100%;
+	height: 640px;
+	background: #e2e2e2;
+	border-radius: 12px;
+	padding-top: 80px;
+}
+#hosting h2 {
+	width: 442px;
+	height: 300px;
+	background: #eeeeee;
+	margin-bottom: 130px;
+}
+#hosting button {
+	width: 170px;
+	height: 49px;
+	background: #eeeeee;
+	border-radius: 14px;
+	border: none;
+}
+
+/* main - future destination */
+#future_dest .w1280 {
+	height: 440px;
+	padding-top: 100px;
+}
+#future_dest h2 {
+	width: 100%;
+	height: 40px;
+	background: #e2e2e2;
+	border-bottom: 1px solid #bcbcbc;
+}
+#future_dest .future_dest_list {
+	width: 100%;
+	height: 240px;
+	background: #e2e2e2;
+}
+
+/* footer */
+#info_list {
+	height: 400px;
+	padding-top: 80px;
+	justify-content: flex-start;
+}
+#info_list > div {
+	width: 20%;
+	height: 240px;
+	background: #e2e2e2;
+	margin-right: 85px;
+}
+#copyright {
+	padding-top:49px;
+	justify-content: space-between;
+}
+#copyright .foot_left {
+	width: 320px;
+	height: 70px;
+	background: #e2e2e2;
+}
+#copyright .foot_right {
+	width: 340px;
+	height: 70px;
+	background: #e2e2e2;
+}
+
