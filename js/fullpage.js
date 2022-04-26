@@ -108,15 +108,15 @@
         options = deepExtend({
             //navigation
             menu: false,
-            anchors:[],
+            anchors:["mainPage", "healthyPage", "nowPage"],
             lockAnchors: false,
-            navigation: false,
+            navigation: true,
             navigationPosition: 'right',
-            navigationTooltips: [],
-            showActiveTooltip: false,
-            slidesNavigation: false,
+            navigationTooltips: ["MAIN", "HEALTHY", "NOW"],
+            showActiveTooltip: true,
+            slidesNavigation: true,
             slidesNavPosition: 'bottom',
-            scrollBar: false,
+            scrollBar: true,
             hybrid: false,
 
             //scrolling
@@ -162,7 +162,7 @@
             fixedElements: null,
             responsive: 0, //backwards compabitility with responsiveWiddth
             responsiveWidth: 0,
-            responsiveHeight: 0,
+            responsiveHeight: 1,
             responsiveSlides: false,
             parallax: false,
             parallaxOptions: {

@@ -1,2 +1,4 @@
-test.html
+*.pdf
 wireframe_main.html
+original/
+.vscode/
