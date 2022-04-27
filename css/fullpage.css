@@ -161,7 +161,7 @@ html.fp-enabled,
     width: 10px;
     margin: -4px 0 0 -4px;
     border-radius: 100%;
-    background: #00b6be;
+    background: #199da3;
  }
 #fp-nav ul li a span,
 .fp-slidesNav ul li a span {
@@ -171,9 +171,7 @@ html.fp-enabled,
     height: 10px;
     width: 10px;
     border: 0;
-    background: rgba(255, 255, 255, .8);
-    /* left: 50%;
-    top: 50%;   */  
+    background: rgba(255, 255, 255, .8); 
     left: 160%;
     top: 300%;
     margin: -4px 0 0 -4px;
@@ -187,11 +185,10 @@ html.fp-enabled,
     width: 10px;
     height: 10px;
     margin: -4px 0px 0px -4px;
-    background: #00b6be;
+    background: #199da3;
 }
 #fp-nav ul li .fp-tooltip {
     position: absolute;
-    /* top: -7px; */
     top: 25px;
     color: #fff;
     font-size: 13px;
@@ -201,7 +198,7 @@ html.fp-enabled,
     white-space: nowrap;
     letter-spacing: 0.04em;
     border-radius: 20px;
-    background: #00b6be;
+    background: #199da3;
     max-width: 220px;
     width: 175px;
     height: 31px;
@@ -225,7 +222,6 @@ html.fp-enabled,
     display: none;
 }
 #fp-nav ul li .fp-tooltip.fp-right {
-    /* right: 25px; */
     right: 5px;
 }
 #fp-nav ul li .fp-tooltip.fp-left {

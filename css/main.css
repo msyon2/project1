@@ -578,13 +578,13 @@
 	background: #0770bb;
 }
 .info_box:nth-child(2) .box_top {
-	background: #199da3;
+	background: #138086;
 }
 .info_box:nth-child(3) .box_top {
-	background: #e3751c;
+	background: #c05702;
 }
 .info_box:nth-child(4) .box_top {
-	background: #3798b8;
+	background: #217d9c;
 }
 .box_top a {
 	display: block;

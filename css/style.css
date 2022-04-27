@@ -249,7 +249,6 @@ h1 {
 /* gnb & quicklink fixed on scroll - jquery */
 #gnb.fixed {
 	height: 70px;
-	/* transition: all 1s ease-in-out; */
 }
 #gnb.fixed #gnb_top{
 	display: none;
@@ -259,7 +258,6 @@ h1 {
 	top: 0;
 	background: #fff;
 	border-bottom: 1px solid #e8e8e8;
-	/* transition: all .2s ease-out; */
 }
 
 #gnb.fixed #gnb_nav div .tit>a {
