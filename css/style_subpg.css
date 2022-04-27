@@ -176,13 +176,13 @@ h1.logo {
 button.open_menu {
 	width: 24px;
 	height: 18px;
-	background: url(../images/icon_header.png)top left no-repeat;
+	background: url(../images/icon_header.png) top left no-repeat;
 	margin-top: 25px;
 }
 #gnb_nav:hover button.open_menu{
 	width: 24px;
 	height: 24px;
-	background: url(../images/icon_header.png)left -170px no-repeat;
+	background: url(../images/icon_header.png) left -170px no-repeat;
 	margin-top: 25px;
 	position: relative;
 	z-index: 99;
@@ -346,7 +346,7 @@ button.open_menu {
 	display: block;
 	width: 64px;
 	height: 65px;
-	background: url(../images/icon_header.png)no-repeat -180px 0px;
+	background: url(../images/icon_header.png) no-repeat -180px 0px;
 	position: relative;
 	left: -15px;
 	margin-bottom: 5px;
@@ -371,7 +371,7 @@ button.open_menu {
 	display: block;
 	width: 64px;
 	height: 65px;
-	background: url(../images/icon_header.png)no-repeat  -178px -99px;
+	background: url(../images/icon_header.png) no-repeat  -178px -99px;
 	margin-left: 5px;
 	margin-bottom: 5px;
 }
@@ -391,7 +391,7 @@ button.open_menu {
 	display: block;
 	width: 70px;
 	height: 65px;
-	background: url(../images/icon_header.png)no-repeat -180px -200px;
+	background: url(../images/icon_header.png) no-repeat -180px -200px;
 	margin-bottom: 5px;
 }
 .banner_btm .banner_info2 .team::after {
@@ -724,7 +724,7 @@ button.open_menu {
 .quick_link .top_btn {
 	width: 60px;
 	height: 60px;
-	background: url(../images/icon_top.png)0 0 no-repeat;
+	background: url(../images/icon_top.png) 0 0 no-repeat;
 	cursor: pointer;
 	top: -90px;
 	right: 0;

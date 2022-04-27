@@ -114,7 +114,7 @@ h1 {
 	width: 70%;
 	height: 70px;
 	text-align: left;
-	white-space: nowrap; /* content가 길어져도 줄바꿈 안함 */
+	white-space: nowrap; 
 	text-overflow: ellipsis;
 	overflow: hidden;
 }

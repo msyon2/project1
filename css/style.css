@@ -129,7 +129,6 @@ h1 {
 #gnb_top .top_right .lang a{
 	min-width: 62px;
 	height: 26px;
-	/* overflow: hidden; */
 	line-height: 1.5em;
 	border: 1px solid #fff;
 	border-radius: 30px;
